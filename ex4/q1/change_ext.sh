@@ -39,7 +39,7 @@ for f in `ls $2` ; do
      	newf="${f%.*}"
 	echo "$newf.$ext"	
 	mv "$f" "$newf.$ext"
-	#mv "$f" "${f%.*}.$ext"
+	#mv "$f" "${f%.*}.$ext" why this is not working :(
 	echo $f
 done
 
